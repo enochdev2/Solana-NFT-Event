@@ -1,0 +1,11 @@
+Model Information:
+* title:	venue stage for great events
+* source:	https://sketchfab.com/3d-models/venue-stage-for-great-events-d74b3baa5a74430fb3717cfa3d883476
+* author:	QuarizonStudio (https://sketchfab.com/QuarizonStudio)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "venue stage for great events" (https://sketchfab.com/3d-models/venue-stage-for-great-events-d74b3baa5a74430fb3717cfa3d883476) by QuarizonStudio (https://sketchfab.com/QuarizonStudio) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
