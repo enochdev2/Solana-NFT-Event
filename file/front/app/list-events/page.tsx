@@ -57,7 +57,7 @@ const ListEvents: React.FC = () => {
         <Layout>
             <div className="container mx-auto px-4 lg:px-12 min-h-screen py-8 bg-[url('/herobg.png')]">
             <h1 className="text-center text-3xl font-extrabold bg-gradient-to-r from-[#f305cb] via-[#ff0000] to-[#8c06fa] text-transparent bg-clip-text">NFT Event Listings</h1>
-            <p className="text-pink-300 mb-10 w-2/3 my-5 text-center text-2xl m-auto mt-4">
+            <p className="text-pink-300 mb-10 md:w-2/3 my-5 text-center text-2xl m-auto mt-4">
                 Discover all events created on the Solana blockchain. Click on an event to learn more and securely purchase tickets. Explore a world of events built on Solana. Click to learn more and buy tickets safely.
 
 

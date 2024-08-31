@@ -24,8 +24,8 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="w-screen bg-gradient-to-tl from-[#050391] via-[#023d8af8] to-[#2c1864] backdrop- backdrop-opacity-20 text-white md:px-16 backdrop-blur-md mx-auto mt-10 p-6">
-      <div className="flex justify-between">
+    <footer className="w-screen bg-gradient-to-tl from-[#050391] via-[#023d8af8] to-[#2c1864] backdrop- backdrop-opacity-20 text-white md:px-16 backdrop-blur-md mx-auto mt-10 py-6 px-6 overflow-hidden">
+      <div className="block md:flex flex-wrap justify-between px-2">
         {/* Logo and Text Section */}
           <div className='flex-1 '>
         <div className="flex-1 h-10 mb-2 w-64  relative overflow-hidden">

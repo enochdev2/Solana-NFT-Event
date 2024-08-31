@@ -41,7 +41,7 @@ const CreateEvent: React.FC = () => {
         <Layout>
             <div className="flex flex-col md:flex-row items-start justify-between px-8 text-white">
       {/* Left Side: Text and Button */}
-      <div className=" relative  md:w-1/2 p-4 h-[100vh] ">
+      <div className=" relative hidden lg:block md:w-1/2 p-4 h-[100vh] ">
         <Image
           src='/nft.png'
           fill
@@ -52,8 +52,8 @@ const CreateEvent: React.FC = () => {
       </div>
 
       {/* Right Side: Image */}
-      <div className="max-w-md mx-auto p-4 mt-5  shadow-md rounded-lg flex-1 bg-gradient-to-r from-[#eb0ebf] via-[#e21c1c] to-[#9206f7] backdrop-blur-lg">
-      <div className="max-w-md mx-auto p-4 my-5 bg-black/70 text-white shadow-md rounded-lg flex-1">
+      <div className=" w-[98%] lg:max-w-md mx-auto p-4 mt-5  shadow-md rounded-lg flex-1 bg-gradient-to-r from-[#eb0ebf] via-[#e21c1c] to-[#9206f7] backdrop-blur-lg">
+      <div className=" w-[98%] lg:max-w-md mx-auto p-4 my-5 bg-black/70 text-white shadow-md rounded-lg flex-1">
       <h1 className="text-2xl font-bold mb-4">Create Event</h1>
       
       <form
@@ -136,7 +136,7 @@ const CreateEvent: React.FC = () => {
       </form>
     </div>
       </div>
-    </div>
+            </div>
         </Layout>
     );
 };

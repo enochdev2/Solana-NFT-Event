@@ -12,8 +12,8 @@ const VerifyNft: React.FC = () => {
 
     return (
         <Layout>
-          <section className="w-full h-screen flex justify-center items-center">
-        <div className="w-full h-screen flex items-center justify-center">
+          <section className="w-full h-screen flex justify-center items-center mx-auto">
+        <div className="w-[98%] h-screen flex items-center justify-center">
             <div className="max-w-md w-full space-y-8 p-10 shadow-sm bg-gradient-to-tl from-[#092338] to-[#2b0416] rounded-xl shadow-purple-600 ">
                 <h1 className="text-center text-3xl font-extrabold bg-gradient-to-br from-[#ffafaf] via-[#0489f5a6] to-[#c374f7] text-transparent bg-clip-text "> Verify your NFT</h1>
                 <p className="text-blue-300 mb-4 text-xl">

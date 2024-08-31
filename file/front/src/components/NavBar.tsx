@@ -15,11 +15,11 @@ const NavBar: React.FC = () => {
     };
 
     return (
-        <div className="flex justify-around bg-[#050816] w-screen items-center border border-black m-auto  p-5">
+        <div className="flex justify-around bg-[#050816] w-screen overflow-x-hidden items-center border border-black m-auto  p-5">
       <div className="hidden md:block">
       <Image src={SolanaLogo} alt="Solana Logo" width={200} height={200} />
       </div>
-      <div className="text-white space-x-6">
+      <div className="text-white hidden md:flex text-sm md:text-xl space-x-3 md:space-x-6">
         <Link href={"/"} >
          Home
         </Link>

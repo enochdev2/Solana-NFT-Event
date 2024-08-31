@@ -11,8 +11,8 @@ const Home: React.FC = () => {
             <section className=" bg-[url('/herobg.png')]">
             <Hero/>
             <div className="flex flex-col py-8 items-center justify-center ">
-                <h1 className="text-5xl font-extrabold bg-gradient-to-br from-[#ffafaf] via-[#0489f5a6] to-[#c374f7] text-transparent bg-clip-text mb-4">Welcome to our events and NFTs platform.</h1>
-                <p className="text-xl text-gray-100 mb-8 text-center max-w-2xl">
+                <h1 className="text-3xl md:text-5xl font-extrabold bg-gradient-to-br from-[#ffafaf] via-[#0489f5a6] to-[#c374f7] text-transparent bg-clip-text mb-4">Welcome to our events and NFTs platform.</h1>
+                <p className="text-base md:text-xl text-gray-100 px-2 mb-8 text-center max-w-2xl">
                 Our platform, built on the Solana blockchain, allows event organizers to create unique events and sell tickets as NFTs.
                 Using the Solana blockchain, our platform enables event organizers to mint unique events and sell tickets as non-fungible tokens.
                 </p>

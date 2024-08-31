@@ -64,7 +64,7 @@ const ShowEvent: React.FC = () => {
 
     return (
         <Layout>
-         <div className=" w-screen min-h-screen mb-10">
+         <div className=" w-screen px-3 min-h-screen mb-10">
             <div className="md:flex items-center h-full gap-4  justify-evenly">
                 <div className="max-w-md w-full space-y-8 p-10 mt-3 bg-gradient-to-tl from-[#092338] to-[#2b0416] rounded-xl shadow-md">
                     {eventDetails && (

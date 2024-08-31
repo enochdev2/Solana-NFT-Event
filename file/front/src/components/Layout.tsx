@@ -23,7 +23,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     };
 
     return (
-        <div className=" mx-auto text-center flex flex-col w-screen min-h-screen">
+        <div className=" mx-auto  text-center flex flex-col w-screen min-h-screen overflow-x-hidden ">
             <NavBar />
             <div className="flex-grow flex flex-col  ">
                 {wallet?.publicKey ? (
