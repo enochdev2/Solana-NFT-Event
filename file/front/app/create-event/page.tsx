@@ -52,7 +52,7 @@ const CreateEvent: React.FC = () => {
       </div>
 
       {/* Right Side: Image */}
-      <div className=" w-[98%] lg:max-w-md mx-auto p-4 mt-5  shadow-md rounded-lg flex-1 bg-gradient-to-r from-[#eb0ebf] via-[#e21c1c] to-[#9206f7] backdrop-blur-lg">
+      <div className=" w-[98%] md:max-w-3xl lg:max-w-md mx-auto p-4 mt-5  shadow-md rounded-lg flex-1 bg-gradient-to-r from-[#eb0ebf] via-[#e21c1c] to-[#9206f7] backdrop-blur-lg">
       <div className=" w-[98%] lg:max-w-md mx-auto p-4 my-5 bg-black/70 text-white shadow-md rounded-lg flex-1">
       <h1 className="text-2xl font-bold mb-4">Create Event</h1>
       
