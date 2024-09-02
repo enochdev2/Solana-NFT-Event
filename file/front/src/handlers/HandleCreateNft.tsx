@@ -55,20 +55,20 @@ export const handleCreateNft = async (
         const txid = await program.methods
             .createNft(metadata.name, metadata.symbol, metadata.uri)
             .accounts({
-                signer: wallet.publicKey, 
-                mint: mint.publicKey, 
+                signer: wallet.publicKey,
+                mint: mint.publicKey,
                 // @ts-ignore
-                associatedTokenAccount: associatedTokenAccount, 
-                metadataAccount: metadataAccount, 
-                masterEditionAccount: masterEditionAccount, 
-                tokenProgram: TOKEN_PROGRAM_ID, 
-                associatedTokenProgram: ASSOCIATED_TOKEN_PROGRAM_ID, 
-                tokenMetadataProgram: MPL_TOKEN_METADATA_PROGRAM_ID, 
-                systemProgram: SystemProgram.programId, 
-                rent: web3.SYSVAR_RENT_PUBKEY, 
-                ticket: ticketPublicKey, 
+                associatedTokenAccount: associatedTokenAccount,
+                metadataAccount: metadataAccount,
+                masterEditionAccount: masterEditionAccount,
+                tokenProgram: TOKEN_PROGRAM_ID,
+                associatedTokenProgram: ASSOCIATED_TOKEN_PROGRAM_ID,
+                tokenMetadataProgram: MPL_TOKEN_METADATA_PROGRAM_ID,
+                systemProgram: SystemProgram.programId,
+                rent: web3.SYSVAR_RENT_PUBKEY,
+                ticket: ticketPublicKey,
             })
-            .signers([mint]) 
+            .signers([mint])
             .rpc();
 
         toast.success("NFT Generated Successfully !");
@@ -77,7 +77,7 @@ export const handleCreateNft = async (
         const accounts = await program.account.ticket.all([
             {
                 memcmp: {
-                    offset: 8, 
+                    offset: 8,
                     bytes: eventPublicKey,
                 },
             },

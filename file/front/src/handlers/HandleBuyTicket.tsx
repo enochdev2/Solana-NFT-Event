@@ -25,7 +25,7 @@ export const handleBuyTicket = async (
     const { program, SystemProgram } = getAnchorProgram(wallet);
     const ticketAccount = web3.Keypair.generate();
 
-    const dateOfPurchase = new BN(new Date().getTime() / 1000); 
+    const dateOfPurchase = new BN(new Date().getTime() / 1000);
 
     try {
         const txid = await program.methods
@@ -44,7 +44,6 @@ export const handleBuyTicket = async (
         toast.success("Ticket purchased successfully!");
         console.log(`solana confirm -v ${txid}`);
 
-        
         const accounts = await program.account.ticket.all([
             {
                 memcmp: {

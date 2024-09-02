@@ -23,7 +23,7 @@ export const handleVerifyNft = async (e: React.FormEvent, nftPublicKey: string, 
         const tickets = await program.account.ticket.all([
             {
                 memcmp: {
-                    offset: 8, 
+                    offset: 8,
                     bytes: eventPublicKey,
                 },
             },

@@ -11,7 +11,4 @@ export const handleCopyToClipboard = (publicKey: string) => {
     );
 };
 
-
-
-
-export const programId = "Bj3Tg7NaUr8uRgZe358gutaqqNLvDJDZ3EzJXp9gNL44"
+export const programId = "Bj3Tg7NaUr8uRgZe358gutaqqNLvDJDZ3EzJXp9gNL44";

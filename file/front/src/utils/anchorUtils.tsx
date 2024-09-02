@@ -3,7 +3,7 @@ import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
 import { Program, AnchorProvider, web3, Idl, setProvider } from "@coral-xyz/anchor";
 import { Wallet } from "@coral-xyz/anchor/dist/cjs/provider";
 import idl from "../idl/nft_ticketing.json";
-import  {NftTicketing} from "../idl/nft_ticketing"
+import { NftTicketing } from "../idl/nft_ticketing";
 
 const { SystemProgram } = web3;
 
@@ -50,32 +50,23 @@ export const getNetworkAdapterUrl = (network: string): string => {
 
 const network = process.env.NEXT_PUBLIC_REACT_APP_SOLANA_NETWORK!;
 const networkUrl = getNetworkAdapterUrl(network); // URL du validateur.
-console.log("🚀 ~ networkUrl:", networkUrl)
+console.log("🚀 ~ networkUrl:", networkUrl);
 
 const opts = {
     preflightCommitment: process.env.NEXT_PUBLIC_REACT_APP_SOLANA_COMMITMENT as Commitment,
 };
 
-export const ProgramID = new PublicKey(
-    "Bj3Tg7NaUr8uRgZe358gutaqqNLvDJDZ3EzJXp9gNL44"
-  );
+export const ProgramID = new PublicKey("Bj3Tg7NaUr8uRgZe358gutaqqNLvDJDZ3EzJXp9gNL44");
 
 export const getAnchorProgram = (wallet: Wallet) => {
     if (!wallet) {
         throw new Error("Wallet not connected");
     }
 
-    // const connection = new Connection(clusterApiUrl("devnet"), "confirmed");
-    // Crée une nouvelle connexion à Solana avec l'URL du validateur et le niveau de commitment.
     const connection = new Connection(networkUrl, opts.preflightCommitment);
 
 
-    
-//  const program = new Program(idl as NftTicketing, {
-//         connection,
-//       });
-    // Crée une instance de Provider.
-    
+
     const provider = new AnchorProvider(connection, wallet, opts);
     setProvider(provider);
 

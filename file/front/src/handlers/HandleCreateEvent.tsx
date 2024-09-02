@@ -24,12 +24,11 @@ export const handleCreateEvent = async (
 
     const { program, SystemProgram } = getAnchorProgram(wallet);
 
-    
     const eventAccount = web3.Keypair.generate();
 
     try {
         const inputDateTime = new BN(new Date(`${date}T${time}`).getTime() / 1000);
-        const price = new BN(ticketPrice); 
+        const price = new BN(ticketPrice);
 
         const txid = await program.methods
             .createEvent(title, description, inputDateTime, location, price)
@@ -45,7 +44,7 @@ export const handleCreateEvent = async (
         toast.success("Event Created Successfully !");
         console.log(`solana confirm -v ${txid}`);
 
-        resetForm(); 
+        resetForm();
     } catch (err) {
         toast.error("Event creation failed.");
         console.error("Failed to create event.", err);
